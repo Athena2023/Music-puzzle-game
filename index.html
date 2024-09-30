@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>音乐拼图游戏</title>
+    <!-- 引入 CSS 样式表 -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- 页面内容开始 -->
+    <header>
+        <h1>欢迎来到音乐拼图游戏</h1>
+    </header>
+
+    <main>
+        <!-- 音频上传区域 -->
+        <section id="audio-upload">
+            <h2>上传您的mp3格式音频文件</h2>
+            <input type="file" id="audio-file-input" accept="audio/*"><br><br>
+            <label for="segment-count">选择切分的片段数量：2到10段</label>
+            <input type="number" id="segment-count" min="2" max="10" value="3">
+            <button id="process-audio">处理音频并开始游戏</button>
+        </section>
+
+        <!-- 音乐片段区域 -->
+        <section id="music-segments">
+            <h2>音乐片段列表</h2>
+            <div class="segments-list">
+                <!-- 音乐片段按钮将动态添加到这里 -->
+            </div>
+        </section>
+
+        <!-- 拼图区域 -->
+        <section id="puzzle-area">
+            <h2>拼图区域</h2>
+            <div class="puzzle-board" role="list" aria-live="polite" tabindex="0">
+                <!-- 用户选择的片段将显示在这里 -->
+            </div>
+        </section>
+
+        <!-- 控制区域 -->
+        <section id="controls">
+            <button id="play-puzzle">播放拼图</button>
+            <button id="reset-puzzle">重置拼图</button>
+        </section>
+    </main>
+
+    <!-- 引入 JavaScript 文件 -->
+    <script src="app.js"></script>
+</body>
+</html>

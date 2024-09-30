@@ -1,0 +1,162 @@
+/* styles.css */
+
+/* 基本样式保持不变 */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    width: 80%;
+    margin: 0 auto 30px auto;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+.segments-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.segment-button {
+    margin: 10px;
+    padding: 15px 25px;
+    font-size: 1.2em;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.segment-button:hover,
+.segment-button:focus {
+    background-color: #45a049;
+    outline: 2px solid #ff9800;
+}
+
+.puzzle-board {
+    display: flex;
+    justify-content: center;
+    min-height: 100px;
+    border: 2px dashed #ccc;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.puzzle-piece {
+    margin: 10px;
+    padding: 15px 25px;
+    font-size: 1.2em;
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.puzzle-piece:hover,
+.puzzle-piece:focus {
+    background-color: #0b7dda;
+    outline: 2px solid #ff9800;
+}
+
+#controls {
+    display: flex;
+    justify-content: center;
+}
+
+#controls button {
+    margin: 0 10px;
+    padding: 15px 25px;
+    font-size: 1.2em;
+    cursor: pointer;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+#controls button:hover,
+#controls button:focus {
+    background-color: #da190b;
+    outline: 2px solid #ff9800;
+}
+
+#play-puzzle {
+    background-color: #4CAF50;
+}
+
+#play-puzzle:hover,
+#play-puzzle:focus {
+    background-color: #45a049;
+}
+
+#reset-puzzle {
+    background-color: #f44336;
+}
+
+#reset-puzzle:hover,
+#reset-puzzle:focus {
+    background-color: #da190b;
+}
+
+#audio-upload {
+    text-align: center;
+}
+
+#audio-upload input[type="file"] {
+    margin: 10px 0;
+}
+
+#process-audio {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #ff9800;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#process-audio:hover,
+#process-audio:focus {
+    background-color: #e68a00;
+    outline: 2px solid #ff9800;
+}
+
+/* 高亮聚焦的拼图区域 */
+.puzzle-board:focus {
+    outline: 2px solid #ff9800;
+}
+
+/* 样式调整：切分片段数量输入框 */
+#audio-upload label {
+    font-size: 1em;
+    color: #333;
+}
+
+#segment-count {
+    width: 50px;
+    margin-left: 10px;
+    font-size: 1em;
+    padding: 5px;
+}
